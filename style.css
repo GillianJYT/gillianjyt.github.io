@@ -1,0 +1,84 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	border-style: hidden;
+	font-family: 'Lora', serif;
+}
+
+.introContainer {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+#intro {
+	height: 100%;
+}
+
+.introText {
+	position: absolute;
+	bottom: 25%;
+	left: 25%;
+	color: rgb(171, 205, 187);
+	font-family: 'Arial', sans-serif;
+	font-style: italic;
+	font-size: 30px;
+}
+
+h1 {
+	font-family: 'Arial', sans-serif;
+	padding-left: 10%;
+	padding-top: 10%;
+	padding-bottom: 2%;
+}
+
+p {
+	padding-left: 10%;
+}
+
+section {
+	float: left;
+	margin: 0 1.5%;
+	width: 63%;
+	height: 100vh;
+}
+
+/* rgb(171, 205, 187) */
+.menu {
+	background-color: white;
+	border-color: rgb(171, 205, 187);
+	border-bottom-style: solid;
+	overflow: hidden;
+	text-align: center;
+}
+
+.menu li {
+	display: inline;
+}
+
+.menu a {
+	display: inline-block;
+	padding: 1%;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.content {
+	width: 85%;
+	margin-top: 0%;
+	padding-top: 0%;
+}

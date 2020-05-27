@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gillian Tsoi</title>
+		
+		<!-- css -->
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+		
+		<meta name="" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+		<!-- intro -->
+		<div class = "introContainer">
+			<div id = "intro">
+				<a href = "#menu"><img src="introBackground.png" alt="introduction"></a>
+			</div>
+			<div class = "introText">Click to continue</div>
+		</div>
+		
+		<!-- navigation menu -->
+		<nav class="menu" id="menu">
+			<ul>
+				<li><a href = "#about">About</a></li>
+				<li><a href = "#experiences">Experiences</a></li>
+				<li><a href = "#awards">Awards</a></li>
+				<li><a href = "#contact">Contact</a></li>
+			</ul>
+		</nav>
+		
+		
+		<!-- content -->
+		<div class="content">
+			<section>
+				<div>
+					<h1 id = "about">About</h1>
+					<p>I'm studying Management Engineering at the University of Waterloo.</p>
+				</div>
+			</section>
+			
+			<section>
+				<div>
+					<h1 id = "experiences">Experiences</h1>
+					<p></p>
+				</div>
+			</section>
+			
+			<section>
+				<div>
+					<h1 id = "awards">Awards</h1>
+					<p></p>
+				</div>
+			</section>
+			
+			<section>
+				<div>
+					<h1 id = "contact">Contact</h1>
+					<p>
+						Email: <a href="mailto:gillian.jy.tsoi@gmail.com">gillian.jy.tsoi@gmail.com</a> <br>
+						Phone: (647) 778-2822 <br>
+						<br>
+						<a href="resume.pdf" target="_blank">Resume</a>
+						<br><br><br>
+						<a href="https://www.linkedin.com/in/gillian-tsoi/" target="_blank"><img src="" alt="LinkedIn Icon"></a>
+					</p>
+				</div>
+			</section>
+		</div>
+		
+		<!-- jquery and javascript -->
+		<!-- <script>			
+			$(document).ready(function() {
+			$("#name").click(function() {
+			$("#name").hide();
+			});
+			})
+		</script> -->
+		<script>
+			window.onscroll = function() {myFunction()};
+			
+			var navbar = document.getElementById("menu");
+			var sticky = navbar.offsetTop;
+			
+			function myFunction() {
+			if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+			} else {
+			navbar.classList.remove("sticky");
+			}
+			}
+		</script>
+		<script> 
+			$(document).on('click', "#intro", function(){
+				$("#intro").slideUp("slow");				
+				);
+			});
+		</script>
+	</body>
+	
+</html>
