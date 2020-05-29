@@ -10,6 +10,8 @@ body, html {
 body {
 	border-style: hidden;
 	font-family: 'Lora', serif;
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 .introContainer {
@@ -33,14 +35,21 @@ body {
 }
 
 h1 {
-	font-family: 'Arial', sans-serif;
-	padding-left: 10%;
-	padding-top: 10%;
+	padding-top: 12%;
+	padding-bottom: 0%;
+}
+
+h3 {
+	
+}
+
+.subheading {
+	font-style: italic;
 	padding-bottom: 2%;
 }
 
 p {
-	padding-left: 10%;
+	
 }
 
 section {
@@ -81,4 +90,5 @@ section {
 	width: 85%;
 	margin-top: 0%;
 	padding-top: 0%;
+	padding-left: 10%;
 }

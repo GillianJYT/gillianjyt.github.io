@@ -16,7 +16,7 @@
 	<body>
 		<!-- intro -->
 		<div class = "introContainer">
-			<div id = "intro">
+			<div id = "intro" onclick= "changeScroll()">
 				<a href = "#menu"><img src="introBackground.png" alt="introduction"></a>
 			</div>
 			<div class = "introText">Click to continue</div>
@@ -45,14 +45,36 @@
 			<section>
 				<div>
 					<h1 id = "experiences">Experiences</h1>
-					<p></p>
+					<p>
+						
+					</p>
 				</div>
 			</section>
 			
 			<section>
 				<div>
 					<h1 id = "awards">Awards</h1>
-					<p></p>
+					<p>
+						<ul>
+							<li>
+								<h3>Scarlet Award</h3>
+								<div class = "subheading">June 2019 | Victoria Park Collegiate Institute</div>
+								Presented to graduating students who have made exemplary contributions to school life through positive and dedicated leadership throughout their time in high school
+							</li>
+							<br>
+							<li>
+								<h3>Certificate of Distinction in the Fermat Math Contest</h3>
+								<div class = "subheading">2018 | University of Waterloo</div>
+								For placing top 25% of all contestants
+							</li>
+							<br>
+							<li>
+								<h3>Certificate of Distinction in the Sir Isaac Newton Exam</h3>
+								<div class = "subheading">2018 | University of Waterloo</div>
+								For placing in the 64th percentile
+							</li>
+						</ul>
+					</p>
 				</div>
 			</section>
 			
@@ -65,7 +87,7 @@
 						<br>
 						<a href="resume.pdf" target="_blank">Resume</a>
 						<br><br><br>
-						<a href="https://www.linkedin.com/in/gillian-tsoi/" target="_blank"><img src="" alt="LinkedIn Icon"></a>
+						<a href="https://www.linkedin.com/in/gillian-tsoi/" target="_blank"><img src="linkedin.png" alt="LinkedIn Icon" width = "50" height = "50"></a>
 					</p>
 				</div>
 			</section>
@@ -74,8 +96,8 @@
 		<!-- jquery and javascript -->
 		<!-- <script>			
 			$(document).ready(function() {
-			$("#name").click(function() {
-			$("#name").hide();
+			$("#intro").click(function() {
+			$("#intro").hide();
 			});
 			})
 		</script> -->
@@ -86,17 +108,16 @@
 			var sticky = navbar.offsetTop;
 			
 			function myFunction() {
-			if (window.pageYOffset >= sticky) {
-			navbar.classList.add("sticky")
-			} else {
-			navbar.classList.remove("sticky");
-			}
+				if (window.pageYOffset >= sticky) {
+					navbar.classList.add("sticky")
+					} else {
+					navbar.classList.remove("sticky");
+				}
 			}
 		</script>
 		<script> 
 			$(document).on('click', "#intro", function(){
-				$("#intro").slideUp("slow");				
-				);
+				$("#intro").slideUp("slow");
 			});
 		</script>
 	</body>
