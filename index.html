@@ -14,10 +14,21 @@
 	</head>
 	
 	<body>
-		<!-- intro -->
+		<!-- intro -->		
 		<div class = "introContainer">
 			<div id = "intro" onclick= "changeScroll()">
-				<a href = "#menu"><img src="introBackground.png" alt="introduction"></a>
+				<a href = "#menu">
+					<!-- separate portrait and text images
+						<div class="introRow">
+						<div class="introColumn">
+						<img src="Gillian_Portrait.png" alt="portrait">
+						</div>
+						<div class="introColumn">
+						<img src="introBackground.png" alt="introduction">
+						</div>
+					</div>-->
+					<img class="intro" src="intro.png" alt="introduction">					
+				</a>
 			</div>
 			<div class = "introText">Click to continue</div>
 		</div>
@@ -37,7 +48,7 @@
 			<section>
 				<div>
 					<h1 id = "about">About</h1>
-					<p>I'm studying Management Engineering at the University of Waterloo.</p>
+					<p>I'm a second-year Management Engineering student at the University of Waterloo.</p>
 				</div>
 			</section>
 			
@@ -45,7 +56,10 @@
 				<div>
 					<h1 id = "projects">Projects</h1>
 					<p>
-						<a href="project1.html">Click here.</a>
+						<div class="project">
+							<a href="https://github.com/GillianJYT/HackWestern7" target="_blank" rel="noreferrer noopener"><img class="project" src="benchSpotImage.png" alt="Bench Spot App Button"></a>
+						</div>
+						<!--<a href="project1.html" target="_blank" rel="noreferrer noopener">Click here.</a>-->
 					</p>
 				</div>
 			</section>
@@ -81,12 +95,12 @@
 			var sticky = navbar.offsetTop;
 			
 			function myFunction() {
-				if (window.pageYOffset >= sticky) {
-					navbar.classList.add("sticky")
-					} else {
-					navbar.classList.remove("sticky");
-				}
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+				} else {
+				navbar.classList.remove("sticky");
 			}
+		}
 		</script>
 		<script> 
 			$(document).on('click', "#intro", function(){
