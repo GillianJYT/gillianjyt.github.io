@@ -2,6 +2,31 @@ html {
 	scroll-behavior: smooth;
 }
 
+h1 {
+	padding-top: 12%;
+	padding-bottom: 0%;
+}
+
+h2 {
+	text-indent: 5%;
+	font-weight: normal;
+}
+
+p {
+	font-size: 125%;
+}
+
+a {
+	color: #abcdbb;
+}
+
+section {
+	float: left;
+	margin: 0 1.5%;
+	width: 63%;
+	height: 100vh;
+}
+
 .h-screen {
 	height: 100vh;
 }
@@ -38,7 +63,7 @@ html {
 
 .main-header {
 	font-size: 150px;
-	/*font-size: 12vmin;*/
+	font-size: 12vmin;
 	text-align: left;
 }
 
@@ -69,52 +94,13 @@ img.project:hover {
 	top: -10px;
 }
 
-
-.introText {
-	position: absolute;
-	top: 75%;
-	bottom: 25%;
-	left: 40%;
-	color: rgb(171, 205, 187);
-	font-family: 'Arial', sans-serif;
-	font-style: italic;
-	font-size: 30px;
-}
-
-h1 {
-	padding-top: 12%;
-	padding-bottom: 0%;
-}
-
-h2 {
-	text-indent: 5%;
-	font-weight: normal;
-}
-
-h3 {
-	
-}
-
 .subheading {
 	font-style: italic;
 	padding-bottom: 2%;
 	}
 
-p {
-	font-size: 125%;
-}
-
-section {
-	float: left;
-	margin: 0 1.5%;
-	width: 63%;
-	height: 100vh;
-}
-
-/* rgb(171, 205, 187) */
 .menu {
-	background-color: white;
-	border-color: rgb(171, 205, 187);
+	border-color: #abcdbb;
 	border-bottom-style: solid;
 	overflow: hidden;
 	text-align: center;
@@ -129,7 +115,7 @@ section {
 	padding: 1%;
 	text-decoration: none;
 	font-size: 20px;
-	color: black;
+	color: #f6f6f6;
 }
 
 .sticky {
