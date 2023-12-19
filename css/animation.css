@@ -1,0 +1,17 @@
+@keyframes movingArrow {
+    0%, 100% {top: 100%;}
+    50% {top: 0%}
+}
+
+.arrowAnim {
+    animation: movingArrow 2s linear infinite;
+    position: absolute;
+    width: 70px;
+}
+
+.arrowContainer{
+    position: relative;
+    height:5vh;
+    width: 100vw;
+    margin-left: calc(50vw - 70px);
+}

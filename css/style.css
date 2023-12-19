@@ -1,10 +1,14 @@
+/* key elements */
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 h1 {
 	padding-top: 12%;
 	padding-bottom: 0%;
+	font-size: medium;
+	font-weight: normal;
 }
 
 h2 {
@@ -27,6 +31,11 @@ section {
 	height: 100vh;
 }
 
+hr {
+	margin-block-start: 0%;
+}
+
+/* general formatting */
 .h-screen {
 	height: 100vh;
 }
@@ -40,11 +49,11 @@ section {
 	width: 100vw;
 }
 
-.w-center {
-	margin-left: auto;
-	margin-right: auto;
+.w-center-text {
+	text-align: center;
 }
 
+/* fonts and colours */
 .font-lora {
 	font-family: 'Lora', serif;
 }
@@ -61,49 +70,17 @@ section {
 	background-color: #191919;
 }
 
-.main-header {
-	font-size: 150px;
-	font-size: 12vmin;
-	text-align: left;
+.default-font-size {
+	font-size: 300%;
 }
 
-.introContainer {
-	display: flex;
-	position: relative;
-	text-align: center;
-}
-
-img.headshot {
-	height: auto;
-	width: auto;
-	max-height: 50%;
-	max-width: 20%;
-	padding: 5%;
-	border-radius: 40%;
-}
-
-img.project {
-	width: 40%;
-	height: 40%;
-}
-
-img.project:hover {
-	box-shadow: 10px 10px 10px gray;
-	border-radius: 20%;
-	position: relative;
-	top: -10px;
-}
-
-.subheading {
-	font-style: italic;
-	padding-bottom: 2%;
-	}
-
+/* nav bar */
 .menu {
 	border-color: #abcdbb;
 	border-bottom-style: solid;
 	overflow: hidden;
 	text-align: center;
+	z-index:9999;
 }
 
 .menu li {
@@ -124,9 +101,62 @@ img.project:hover {
 	width: 100%;
 }
 
+/* intro section */
+.main-header {
+	font-size: 150px;
+	font-size: 12vmin;
+	text-align: left;
+}
+
+.introContainer {
+	display: flex;
+	position: relative;
+	text-align: center;
+	height: 70%;
+	padding-top: 15vh;
+}
+
+img.headshot {
+	height: auto;
+	width: auto;
+	max-height: 50%;
+	max-width: 20%;
+	padding: 5%;
+	border-radius: 40%;
+	margin-left: 15%;
+}
+
+img.arrow {
+	display: flex;
+	justify-self: center;
+	margin: auto;
+}
+
+/* all content */
 .content {
 	width: 85%;
 	margin-top: 0%;
 	padding-top: 0%;
 	padding-left: 10%;
 }
+
+/* about section */
+
+
+/* project section */
+img.project {
+	width: 40%;
+	height: 40%;
+}
+
+img.project:hover {
+	box-shadow: 10px 10px 10px gray;
+	border-radius: 20%;
+	position: relative;
+	top: -10px;
+}
+
+.subheading {
+	font-style: italic;
+	padding-bottom: 2%;
+	}
