@@ -15,6 +15,7 @@ body {
 }
 
 .introContainer {
+	display: flex;
 	position: relative;
 	text-align: center;
 }
@@ -23,14 +24,21 @@ body {
 	height: 100%;
 }
 
-/*.introRow {
+.introRow {
 	display: flex;
 }
 
 .introColumn {
-	flex: 50%;
+	width: 50%;
+	height: 100%;
 	padding: 5px;
-} */
+}
+
+img.headshot {
+	width: 30%;
+	height: 30%;
+	border-radius: 40%;
+}
 
 img.intro {
 	width: 100%;
