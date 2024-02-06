@@ -75,30 +75,32 @@ hr {
 }
 
 /* nav bar */
-.menu {
-	border-color: #abcdbb;
-	border-bottom-style: solid;
-	overflow: hidden;
-	text-align: center;
-	z-index:9999;
+header {
+	display: flex;
+	justify-content: space-between;
+	min-height: 10%;
+	align-items: center;
+	padding: 30px 10%;
 }
 
-.menu li {
-	display: inline;
+header h1 {
+	margin: 0;
+	padding: 0;
 }
 
-.menu a {
-	display: inline-block;
-	padding: 1%;
+header li, a {
 	text-decoration: none;
-	font-size: 20px;
-	color: #f6f6f6;
+	margin: 0;
+	padding: 0;
 }
 
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
+nav {
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	padding: 0px 20px;
 }
 
 /* intro section */
@@ -159,4 +161,4 @@ img.project:hover {
 .subheading {
 	font-style: italic;
 	padding-bottom: 2%;
-	}
+}
