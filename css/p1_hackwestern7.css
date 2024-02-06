@@ -1,0 +1,18 @@
+h1 {
+	font-size: 50px;
+	font-weight: normal;
+    padding: 0% 2%;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: normal;
+    padding: 0% 2%;
+    margin: 3% 0 0 0;
+}
+
+p {
+    font-size: 25px;
+    padding: 0% 2%;
+    width: 50%;
+}

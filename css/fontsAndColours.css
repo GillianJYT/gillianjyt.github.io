@@ -1,0 +1,25 @@
+/* fonts and colours */
+.font-lora {
+	font-family: 'Lora', serif;
+}
+
+.font-lato {
+	font-family: 'Lato', sans-serif;
+}
+
+.background-black {
+	background-color: #191919;
+}
+
+.default-font-size {
+	font-size: 300%;
+}
+
+h1, h2, p {
+	color: #f6f6f6;
+}
+
+a {
+	color: #abcdbb;
+	text-decoration: none;
+}

@@ -20,10 +20,6 @@ p {
 	font-size: 125%;
 }
 
-a {
-	color: #abcdbb;
-}
-
 section {
 	float: left;
 	margin: 0 1.5%;
@@ -51,27 +47,6 @@ hr {
 
 .w-center-text {
 	text-align: center;
-}
-
-/* fonts and colours */
-.font-lora {
-	font-family: 'Lora', serif;
-}
-
-.font-lato {
-	font-family: 'Lato', sans-serif;
-}
-
-.white {
-	color: #f6f6f6;
-}
-
-.background-black {
-	background-color: #191919;
-}
-
-.default-font-size {
-	font-size: 300%;
 }
 
 /* nav bar */
