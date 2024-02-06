@@ -80,18 +80,33 @@ header {
 	justify-content: space-between;
 	min-height: 10%;
 	align-items: center;
-	padding: 30px 10%;
+	padding: 0px 2%;
+	border-color: #abcdbb;
+	border-bottom-style: solid;
+	overflow: hidden;
+	font-size: 20px;
+	color: #f6f6f6;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	top: 0;
 }
 
 header h1 {
 	margin: 0;
 	padding: 0;
+	font-size: 20px;
+	color: #f6f6f6;
 }
 
 header li, a {
 	text-decoration: none;
 	margin: 0;
 	padding: 0;
+}
+
+header p {
+	padding: 0px 4%;
 }
 
 nav {
