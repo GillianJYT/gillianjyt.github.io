@@ -6,6 +6,8 @@
         <!-- css -->
         <link rel="stylesheet" type="text/css" href="css/p1_hackwestern7.css" />
         <link rel="stylesheet" type="text/css" href="css/fontsAndColours.css" />
+        <link rel="stylesheet" type="text/css" href="css/header.css" />
+
 
 
         <!-- fonts -->
@@ -16,31 +18,67 @@
     </head>
 
     <body class="background-black font-lato">
-        <h1>Hack Western 7 (2020)</h1>
+        <!-- navigation menu -->
+		<header class="background-black" >
+			<h1><a href="index.html#">Gillian Tsoi</a></h1>
+			<nav>
+				<ul>
+					<li><a href = "index.html#about">About</a></li>
+					<li><a href = "index.html#projects">Projects</a></li>
+					<li><a href = "index.html#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<p></p>
+		</header>
+        
+        <!-- content -->
+        <h1>
+            Hack Western 7 (2020)
+            <a href="https://github.com/GillianJYT/HackWestern7" target="_blank" rel="noreferrer noopener"><img class="icon" src="images/githubIcon.png"></a>
+            <a href="https://devpost.com/software/short-stroll-companion" target="_blank" rel="noreferrer noopener"><img class="icon roundCorners" src="images/benchLogo.png"></a>
+        </h1>
+
+        <img class="screenshot" src="images/appScreenshot1.png">
+        <img class="screenshot" src="images/appScreenshot2.png">
+
         <p>
             You're talking a long walk and feel like sitting down. Where's the nearest bench? Or you finish your coffee, but don't see a disposal bin nearby. What do you do?
         </p>
 
         <h2>Bench Spot App</h2>
         <p>
-            The app was created to show the nearest bench or garbage bin to your current location.
-            It uses Toronto's public data and Google Maps API to provide this service.
+            The app is a navigation app based in Toronto that you can use on your walks to help find and navigate to nearby benches, public washrooms, garbage and recycling bins, and more!
         </p>
 
-        <h2>My Contribution</h2>
+        <h2>How It Works</h2>
+        <p>
+            Bench Spot uses your phone’s current location, the latitude and longitude data of all city furniture and calculates the distances to find and display the ones nearest to you!
+        </p>
+
+        <h2>Technologies Used</h2>
+        <p>
+            We used Java and XML for the backend, built the app in Android Studio with map integration through Google Maps API, and collected our data from the City of Toronto Open Data Set.
+        </p>
+
+        <h2>My Contribution and Takeaways</h2>
         <p>
             I worked on the front-end of the appliation. This involved working in Android Studio, and designing and assessing UX.
+            I learned a lot about Android Studio and XML, which helps me in any future mobile app development for Android devices.
         </p>
 
-        <h2>Other Applications</h2>
+        <h2>Possibilities of Further Development</h2>
         <p>
+            We could deploy the app using Google Cloud for public use.
+            <br><br>
             Given alternate data, this app could be converted to show the nearest of any type of object.
             For example, it could show the nearest restroom for travellers, or the nearest dog park for someone who just moved in.
         </p>
-
-        <h2>Link</h2>
+        
+        <h2>Team</h2>
         <p>
-            <a href="https://github.com/GillianJYT/HackWestern7" target="_blank" rel="noreferrer noopener">GitHub</a>
+            Amir Roshankar
+            <br>
+            Edward Zhuang
         </p>
     </body>
 </html>
