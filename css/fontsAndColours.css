@@ -7,19 +7,26 @@
 	font-family: 'Lato', sans-serif;
 }
 
-.background-black {
-	background-color: #191919;
-}
-
 .default-font-size {
 	font-size: 300%;
 }
 
 h1, h2, p {
-	color: #f6f6f6;
+	color: rgb(23 37 84);
 }
 
 a {
-	color: #abcdbb;
+	color: #DB0077;
 	text-decoration: none;
+	
+}
+
+.project {
+	box-shadow: inset 0 0 0 0 #DB0077;
+	transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.project:hover {
+	color: #f6f6f6;
+	box-shadow: inset 500px 0 0 0 #DB0077;
 }

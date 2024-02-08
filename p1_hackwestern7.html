@@ -4,11 +4,10 @@
         <title>Hack Western 7</title>
 
         <!-- css -->
-        <link rel="stylesheet" type="text/css" href="css/p1_hackwestern7.css" />
+        <link href="/css/output.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/project.css"/>
         <link rel="stylesheet" type="text/css" href="css/fontsAndColours.css" />
-        <link rel="stylesheet" type="text/css" href="css/header.css" />
-
-
 
         <!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -17,29 +16,35 @@
 		<meta name="" content="width=device-width, initial-scale=1">
     </head>
 
-    <body class="background-black font-lato">
+    <body class="bg-blue-50 font-lato">
         <!-- navigation menu -->
-		<header class="background-black" >
-			<h1><a href="index.html#">Gillian Tsoi</a></h1>
+		<header class="flex justify-between items-center fixed w-full z-50 pl-20 border-b-2 border-blue-950 text-xl min-h-20 bg-blue-50" >
+			<h1 class="p-0 text-xl"><a class="text-blue-950" href="index.html#">Gillian Tsoi</a></h1>
 			<nav>
 				<ul>
-					<li><a href = "index.html#about">About</a></li>
-					<li><a href = "index.html#projects">Projects</a></li>
-					<li><a href = "index.html#contact">Contact</a></li>
+					<li class="inline-block"><a class="text-blue-950" href = "index.html#about">About</a></li>
+					<li class="inline-block pl-20"><a class="text-blue-950" href = "index.html#projects">Projects</a></li>
+					<li class="inline-block pl-20"><a class="text-blue-950" href = "index.html#contact">Contact</a></li>
 				</ul>
 			</nav>
 			<p></p>
 		</header>
         
         <!-- content -->
-        <h1>
+        <h1 class="text-5xl pt-28">
             Hack Western 7 (2020)
-            <a href="https://github.com/GillianJYT/HackWestern7" target="_blank" rel="noreferrer noopener"><img class="icon" src="images/githubIcon.png"></a>
-            <a href="https://devpost.com/software/short-stroll-companion" target="_blank" rel="noreferrer noopener"><img class="icon roundCorners" src="images/benchLogo.png"></a>
+            <a class="inline-block pl-12 align-sub" href="https://github.com/GillianJYT/HackWestern7" target="_blank" rel="noreferrer noopener">
+                <img src="images/github-dark.png" width = "55" height = "55">
+            </a>
+            <a class="inline-block pl-5 align-bottom pb-0.5" href="https://devpost.com/software/short-stroll-companion" target="_blank" rel="noreferrer noopener">
+                <img class="rounded-2xl" src="images/benchLogo.png" width = "50" height = "50">
+            </a>
         </h1>
 
-        <img class="screenshot" src="images/appScreenshot1.png">
-        <img class="screenshot" src="images/appScreenshot2.png">
+        <div class="flex justify-center py-10">
+            <img class="inline-block w-60 mx-20" src="images/appScreenshot1.png">
+            <img class="inline-block w-60 mx-20" src="images/appScreenshot2.png">
+        </div>
 
         <p>
             You're talking a long walk and feel like sitting down. Where's the nearest bench? Or you finish your coffee, but don't see a disposal bin nearby. What do you do?
@@ -80,5 +85,6 @@
             <br>
             Edward Zhuang
         </p>
+        <br><br><br>
     </body>
 </html>

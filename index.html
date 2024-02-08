@@ -4,8 +4,11 @@
 		<title>Gillian Tsoi's Portfolio</title>
 		
 		<!-- css -->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<link rel="stylesheet" type="text/css" href="css/animation.css" />
+		<!-- npx tailwindcss -i ./css/input.css -o ./css/output.css --watch -->
+		<link href="/css/output.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="/css/fontsAndColours.css" />
+		<link rel="stylesheet" type="text/css" href="/css/animation.css" />
 
 		<!-- js -->
 		<script src="js/jquery-3.7.1.min.js"></script>
@@ -14,63 +17,66 @@
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/header.css" />
 		
 		<meta name="" content="width=device-width, initial-scale=1">
 	</head>
 	
-	<body class="bg-slate-950 font-la font-lato">
+	<body class="bg-blue-50 font-lato">
 		<!-- navigation menu -->
-		<header class="" >
-			<h1><a href="index.html#">Gillian Tsoi</a></h1>
+		<header class="flex justify-between items-center fixed w-full z-50 pl-20 border-b-2 border-blue-950 text-xl min-h-20 bg-blue-50">
+			<h1 class="p-0 text-xl"><a class="text-blue-950" href="index.html#">Gillian Tsoi</a></h1>
 			<nav>
 				<ul>
-					<li><a href = "index.html#about">About</a></li>
-					<li><a href = "index.html#projects">Projects</a></li>
-					<li><a href = "index.html#contact">Contact</a></li>
+					<li class="inline-block"><a class="text-blue-950" href = "index.html#about">About</a></li>
+					<li class="inline-block pl-20"><a class="text-blue-950" href = "index.html#projects">Projects</a></li>
+					<li class="inline-block pl-20"><a class="text-blue-950" href = "index.html#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<p></p>
+			<p class="pr-32"></p>
 		</header>
 
 		<!-- intro -->		
-		<div id="intro" onclick="introScroll()" class="h-screen w-screen">
+		<div id="intro" onclick="introScroll()" class="h-lvh w-lvw">
 			<div class="introContainer">
-				<img class="h-center headshot" src="images/headshot.jpg" alt="portrait">
-				<p class="border-l-amber-300 h-center white main-header">Hi, I'm <br> Gillian Tsoi</p>
+				<img class="my-auto headshot" src="images/headshot.jpg" alt="portrait">
+				<p class="my-auto main-header">Hi, I'm <br> Gillian Tsoi</p>
 			</div>
 			<div class="arrowContainer">
-				<img class="arrow arrowAnim" src="images/down-arrow.png">
+				<img class="arrow arrowAnim" src="images/down-arrow-dark.png">
 			</div>
 		</div>
+
 		<!-- content -->
-		<div class="content">
-				<div class="h-screen">
-					<h1 id = "about">ABOUT</h1>
+		<div class="w-5/6 mt-0 pt-0 pl-40">
+				<div class="h-lvh">
+					<h1 id="about">ABOUT</h1>
 					<p class="default-font-size">I'm a Management Engineering student at the University of Waterloo. I have knowledge in software development, HCI, UX/UI, and project management.</p>
 				</div>
 			
-				<div class="h-screen">
-					<h1 id = "projects">PROJECTS</h1>
-
+				<div class="h-lvh">
+					<h1 id="projects">PROJECTS</h1>
 					<p>
-						<div class="project">
-							<a class="default-font-size" href="p1_hackwestern7.html">Hack Western 7 (2020)</a>
+						<div>
+							<a class="default-font-size project" href="p2_voyager.html">Voyager</a>
+						</div>
+						<div>
+							<a class="default-font-size project" href="p1_hackwestern7.html">Hack Western 7 (2020)</a>
 						</div>
 					</p>
 				</div>
-				<hr class="w-screen">
+				<hr class="w-lvw">
 			
-				<div class="h-screen">
-					<h1 id = "contact">CONTACT</h1>
+				<div class="h-lvh">
+					<h1 id="contact">CONTACT</h1>
 					<p class="default-font-size">
 						Professional Email: <a href="mailto:gillian.jy.tsoi@gmail.com">gillian.jy.tsoi@gmail.com</a> <br>
 						School Email: <a href="mailto:gtsoi@uwaterloo.ca">gtsoi@uwaterloo.ca</a> <br>
-						Phone: (647) 778-2822 <br>
+						Phone: (647) 778-2822
 						<br>
 						<a href="files/Gillian_Tsoi_Resume.pdf" target="_blank">Resume</a>
 						<br><br><br>
-						<a href="https://www.linkedin.com/in/gillian-tsoi/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn Icon" width = "50" height = "50"></a>
+						<a class="inline-block" href="https://www.linkedin.com/in/gillian-tsoi/" target="_blank"><img src="images/linkedin-dark.png" alt="LinkedIn" width = "80" height = "80"></a>
+						<a class="inline-block" href="https://github.com/GillianJYT" target="_blank"><img src="images/github-dark.png" alt="GitHub" width = "80" height = "80"></a>
 					</p>
 				</div>
 		</div>
