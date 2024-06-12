@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blueberry Yield</title>
+
+        <!-- css -->
+        <link href="/css/output.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/project.css"/>
+        <link rel="stylesheet" type="text/css" href="css/fontsAndColours.css" />
+
+        <!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+		
+		<meta name="" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body class="bg-blue-50 font-lato">
+        <!-- navigation menu -->
+		<header class="flex justify-between items-center fixed w-full z-50 pl-20 border-b-2 border-blue-950 text-xl min-h-20 bg-blue-50" >
+			<h1 class="p-0 text-xl"><a class="text-blue-950" href="index.html#">Gillian Tsoi</a></h1>
+			<nav>
+				<ul>
+					<li class="inline-block"><a class="text-blue-950" href = "index.html#about">About</a></li>
+                    <li class="inline-block pl-20"><a class="text-blue-950" href = "index.html#experiences">Experiences</a></li>
+					<li class="inline-block pl-20"><a class="text-blue-950" href = "index.html#projects">Projects</a></li>
+					<li class="inline-block pl-20"><a class="text-blue-950" href = "index.html#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<p></p>
+		</header>
+        
+        <!-- content -->
+        <h1 class="text-5xl pt-28">
+            Blueberry Yield (Mar 2024)
+            <a class="inline-block pl-12 align-sub" href="https://github.com/tzada8/msci546-blueberry-yield" target="_blank" rel="noreferrer noopener">
+                <img src="images/github-dark.png" width = "55" height = "55">
+            </a>
+        </h1>
+
+        <h2>Overview</h2>
+        <p>
+            Using this <a href="https://www.kaggle.com/competitions/playground-series-s3e14/overview">Kaggle competition</a>, 
+            we wanted to predict the yield of wild blueberries. To compare and contrast machine learning methods, the problem was solved using 5 different models, 
+            evaluated using Mean Absolute Error (MAE). We also calculated each models' Mean Squared Error (MSE), Mean Absolute Percentage Error (MAPE) and R<sup>2</sup> Score.
+        </p>
+
+        <h2>My Contribution and Takeaways</h2>
+        <p>
+            I worked on the Multilayer Perceptron (MLP) Neural Network. Before feeding the data into the model, I normalized the data using StandardScalar, 
+            and then tuned the hyperparameters using grid search.
+        </p>
+
+        <div class="flex justify-center py-10">
+            <img class="inline-block h-max mx-20" src="images/blueberryYield/modelResults.png">
+        </div>
+
+        <h2>Possibilities of Further Development</h2>
+        <p>
+            This project itself is completed, so no further development can be made. For my personal development, I would like to practice machine learning and 
+            create more complex neural networks.
+        </p>
+        
+        <h2>Team</h2>
+        <p>
+            Carina Chiu <br>
+            Rawaha Nakhuda <br>
+            Troy Zada
+        </p>
+        <br><br><br>
+    </body>
+</html>
