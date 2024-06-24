@@ -13,3 +13,7 @@ p {
     padding: 0% 5%;
     margin: 0;
 }
+
+.alignImages {
+    align-items: center;
+}
