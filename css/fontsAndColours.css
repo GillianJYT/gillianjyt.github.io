@@ -37,6 +37,17 @@ a {
 	border-radius: 10px;
 }
 
-.bullet-point {
+.bullet-point-ul {
 	list-style-type: '\2605';
+	margin-left: 2rem;
+}
+
+.bullet-point-li {
+	margin-bottom: 1rem;
+	padding-left: 1rem;
+	font-size: 2rem;
+}
+
+.highlighted {
+	color: #589cab;
 }
