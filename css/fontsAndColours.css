@@ -28,11 +28,26 @@ a {
 
 .project:hover {
 	color: #f6f6f6;
-	box-shadow: inset 800px 0 0 0 #DB0077;
+	box-shadow: inset 50rem 0 0 0 #DB0077;
 }
 
 .tag {
 	background-color: #72e3e8;
 	padding: 5px 10px;
 	border-radius: 10px;
+}
+
+.bullet-point-ul {
+	list-style-type: '\2605';
+	margin-left: 2rem;
+}
+
+.bullet-point-li {
+	margin-bottom: 1rem;
+	padding-left: 1rem;
+	font-size: 2rem;
+}
+
+.highlighted {
+	color: #589cab;
 }
